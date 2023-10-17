@@ -25,6 +25,8 @@ class _homescreenState extends State<homescreen> {
     });
   }
 
+  editscreen obj = editscreen();
+
   // void onsearchtextchange(String searchtext) {
   //   setState(() {
   //     Samplenotes = Samplenotes;
@@ -74,7 +76,9 @@ class _homescreenState extends State<homescreen> {
                     style: TextStyle(color: Colors.white, fontSize: 30),
                   ),
                   IconButton(
-                      onPressed: () {},
+                      onPressed: () {
+                        print(Samplenotes.length);
+                      },
                       icon: Container(
                         height: 40,
                         width: 40,

@@ -15,6 +15,7 @@ class _editscreenState extends State<editscreen> {
   List<Map<String, dynamic>> newnotes = [];
 
   final _notebox = Hive.box('notebox');
+
   @override
   void initState() {
     super.initState();
@@ -33,12 +34,11 @@ class _editscreenState extends State<editscreen> {
     }).toList();
     setState(() {
       newnotes = data.reversed.toList();
-      print(newnotes.length);
+      print(" amount of data added ${newnotes.length}");
     });
   }
 
   Future<void> createitem(Map<String, dynamic> newitem) async {
-    await _notebox.add(newitem);
     refreshitem();
   }
 

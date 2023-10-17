@@ -21,8 +21,8 @@ List<Notes> Samplenotes = [
   Notes(
       id: 1,
       Modifiedtime: DateTime(2000),
-      content: '''hai da kuttah 
-      ninnuk sugam anno 
+      content: '''hai da kuttah
+      ninnuk sugam anno
       njan vitil pokuva
       ''',
       title: "sugam anno"),
